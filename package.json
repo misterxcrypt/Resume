@@ -1,0 +1,31 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "private": true,
+  "description": "My Resume site generated from jsonresume.",
+  "keywords": [],
+  "homepage": "https://github.com/HeyItsGilbert/resume#readme",
+  "bugs": {
+    "url": "https://github.com/HeyItsGilbert/resume/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HeyItsGilbert/resume.git"
+  },
+  "license": "ISC",
+  "author": "misterxcrypt",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "init": "resumed init",
+    "start": "resumed --theme jsonresume-theme-elegant",
+    "build": "resumed --theme jsonresume-theme-elegant && cp resume.html public/index.html"
+  },
+  "dependencies": {
+    "jsonresume-theme-elegant": "^1.16.1",
+    "jsonresume-theme-even": "^0.17.0",
+    "resume-cli": "^3.0.8",
+    "resumed": "^3.0.0"
+  },
+  "devDependencies": {}
+}
