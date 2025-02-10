@@ -3,9 +3,9 @@ name: Deploy Resume to GitHub Pages
 on:
   push:
     branches:
-      - main  # Change to your default branch if needed
+      - main  # Change if using a different default branch
     paths:
-      - "resume.html"  # Triggers only when resume.html is updated
+      - "resume.html"  # Trigger only when resume.html changes
   workflow_dispatch:  # Allows manual trigger
 
 permissions:
@@ -22,12 +22,12 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Pages
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v4
 
-      - name: Upload Artifact
-        uses: actions/upload-pages-artifact@v2
+      - name: Upload Resume HTML
+        uses: actions/upload-pages-artifact@v4  # ✅ Updated to v4
         with:
-          path: .  # Deploys all files, including resume.html
+          path: .  # Deploys all files in the repo
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4  # ✅ Updated to v4
