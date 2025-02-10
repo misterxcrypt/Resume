@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Hariharan M</title>
+      <meta name="description" content="Experienced systems engineer with a versatile background encompassing IT and production systems. Focused on DevOps principles, I&#x27;ve been dedicated to automating, scaling, and optimizing operational efficiency. A fervent advocate for nurturing robust teams through a positive work culture, I&#x27;m deeply passionate about transparency, public learning, and continuous enhancement of both developer and user experiences.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
+    <style>:root {
+  color-scheme: light dark;
+
+  --color-background: #ffffff; /* White */
+  --color-muted: #f3f4f5; /* Light Gray 200 */
+  --color-primary: #191e23; /* Dark Gray 900 */
+  --color-secondary: #6c7781; /* Dark Gray 300 */
+  --color-accent: #ffb900; /* Accent Yellow */
+  --color-link: #46b450; /* Accent Green */
+
+  --scale-ratio: 1.25;
+  --scale0: 1rem;
+  --scale1: calc(var(--scale0) * var(--scale-ratio));
+  --scale2: calc(var(--scale1) * var(--scale-ratio));
+  --scale3: calc(var(--scale2) * var(--scale-ratio));
+  --scale4: calc(var(--scale3) * var(--scale-ratio));
+  --scale5: calc(var(--scale4) * var(--scale-ratio));
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #191e23; /* Dark Gray 900 */
+    --color-muted: #23282d; /* Dark Gray 800 */
+    --color-primary: #fbfbfc; /* Light Gray 100 */
+    --color-secondary: #ccd0d4; /* Light Gray 700 */
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-primary);
+  display: grid;
+  font: 1em/1.5 Lato, sans-serif;
+  gap: 2em;
+  grid-template-columns:
+    [full-start]
+    1fr
+    [main-start side-start]
+    minmax(min-content, 12em)
+    [side-end content-start]
+    minmax(min-content, 36em)
+    [main-end content-end]
+    1fr
+    [full-end];
+  grid-template-rows: auto [content] 0;
+  margin-bottom: 4em;
+}
+
+body::before {
+  content: '';
+  grid-column: full;
+  grid-row: content;
+}
+
+ol,
+ul {
+  padding-left: 1em;
+}
+
+:not(.icon-list, .tag-list) > li + li {
+  margin-top: 0.4em;
+}
+
+li::marker,
+.network {
+  color: var(--color-secondary);
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:focus,
+a:hover {
+  color: var(--color-accent);
+}
+
+h1,
+h2,
+h3,
+h5 {
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: var(--scale5);
+}
+
+h2 {
+  color: var(--color-secondary);
+  font-size: var(--scale4);
+}
+
+h3 {
+  color: var(--color-accent);
+  font-size: var(--scale3);
+  grid-column: side;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: var(--scale2);
+}
+
+h5 {
+  font-size: var(--scale1);
+}
+
+h6 {
+  font-size: var(--scale0);
+}
+
+blockquote {
+  border-left: 0.2em solid var(--color-muted);
+  padding-left: 1em;
+}
+
+cite {
+  color: var(--color-secondary);
+  font-style: inherit;
+}
+
+cite::before {
+  content: '— ';
+}
+
+svg {
+  margin-right: 0.2em;
+  vertical-align: -0.2em;
+}
+
+.masthead {
+  background: var(--color-muted);
+  display: inherit;
+  gap: inherit;
+  grid-column: full;
+  grid-template-columns: inherit;
+  padding: 4em 0;
+  text-align: center;
+}
+
+.masthead > *,
+section {
+  grid-column: main;
+}
+
+.masthead > img {
+  border-radius: 50%;
+  margin: 0 auto;
+  max-width: 12em;
+}
+
+article > * + *,
+blockquote > * + * {
+  margin-top: 0.6em;
+}
+
+.meta {
+  color: var(--color-secondary);
+}
+
+.stack {
+  display: grid;
+  gap: 1.5em;
+}
+
+.icon-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em 1em;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.grid-list {
+  display: grid;
+  gap: 1em;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+  list-style: none;
+  padding: 0;
+}
+
+.tag-list > li {
+  background: var(--color-muted);
+  border-radius: 0.2em;
+  padding: 0.2em 0.6em;
+}
+
+.bullet-item:not(:first-child)::before {
+  content: '· ';
+  margin: 0 0.2em;
+}
+
+@media print, (min-width: 48em) {
+  h3 {
+    text-align: right;
+    margin-bottom: inherit;
+  }
+
+  .masthead {
+    text-align: inherit;
+  }
+
+  .masthead > *,
+  section {
+    grid-column: content;
+  }
+
+  .masthead img {
+    grid-column: side;
+    grid-row: span 2;
+    max-width: 100%;
+  }
+
+  section {
+    display: contents;
+  }
+
+  .icon-list {
+    flex-direction: column;
+  }
+
+  .grid-list {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(calc((100% - 1em) / 2), 1fr)
+    );
+  }
+}
+</style>
+  </head>
+  <body>
+      <header class="masthead">
+          <img src="https://1.gravatar.com/avatar/e82d2ee6404115196671b155cb3b00244df35af4b098656692f15cd8a42fcf33?size&#x3D;256" alt="">
+        <div>
+            <h1>Hariharan M</h1>
+            <h2>Cyber Threat Intel Analyst</h2>
+        </div>
+          <article>
+            <p>Experienced systems engineer with a versatile background encompassing IT and production systems. Focused on DevOps principles, I've been dedicated to automating, scaling, and optimizing operational efficiency. A fervent advocate for nurturing robust teams through a positive work culture, I'm deeply passionate about transparency, public learning, and continuous enhancement of both developer and user experiences.</p>
+          </article>
+        <ul class="icon-list">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Chennai, India
+              </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:hariharan.mathankumar@gmail.com">hariharan.mathankumar@gmail.com</a>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+              <a href="https://misterxcrypt.github.io">misterxcrypt.github.io</a>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                  <a href="https://www.linkedin.com/in/hariharanmathan/">hariharanmathan</a>
+                <span class="network">(LinkedIn)</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <a href="https://github.com/misterxcrypt/">misterxcrypt</a>
+                <span class="network">(github)</span>
+            </li>
+        </ul>
+      </header>
+
+      <section id="work">
+        <h3>Work</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <h4>Cyber Threat Intel Analyst</h4>
+                <div class="meta">
+                  <div>
+                    <strong><a href="https://www.linkedin.com/company/saptang-labs">Saptanglabs</a></strong>
+                  </div>
+                  <div>
+                    <time datetime="2023-01-02">Jan 2023</time> –
+                    Present
+                  </div>
+                    <div>IIT Madras Research Park, Chennai, Tamil Nadu, India</div>
+                </div>
+              </header>
+                <p>Led cyber threat intelligence initiatives, leveraging automation and data analysis to identify fraud, disrupt malicious networks, and protect brands from impersonation and misuse.</p>
+                <ul>
+                    <li><p>Helped brands safeguard their reputation by detecting brand misuse and impersonation through cyber threat intelligence and fraud analysis, enabling proactive threat mitigation.</p></li>
+                    <li><p>Developed a Python-based automation tool leveraging Selenium, MongoDB, and Celery to gather intelligence on threat actors operating fraudulent betting and investment sites. This solution enhanced threat detection efficiency by 75%.</p></li>
+                    <li><p>Uncovered 99,000+ scammer data points and 2,000+ malicious ad domains, disrupting fraudulent networks and collaborating with government agencies for enforcement action.</p></li>
+                    <li><p>Monitored Telegram and the Dark Web, producing 20+ actionable threat intelligence reports to aid in cybercrime prevention and mitigation.</p></li>
+                </ul>
+            </article>
+        </div>
+      </section>
+      <section id="education">
+        <h3>Education</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <h4>Sri Eshwar College of Engineering</h4>
+                <div class="meta">
+                    <strong>Coimbatore, India</strong>
+                  <div>
+                    <time datetime="2021-10">Oct 2021</time> –
+                    <time datetime="2025-05">May 2025</time>
+                  </div>
+                </div>
+              </header>
+                <p>Bachelor of Technologies</p>
+                <h5>Courses</h5>
+                <ul>
+                    <li><p>Computer Science and Business Systems</p></li>
+                </ul>
+            </article>
+        </div>
+      </section>
+      <section id="projects">
+        <h3>Projects</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <h4><a href="https://github.com/misterxcrypt/TryHackMe-Obsidian">SOC Notes Repository</a></h4>
+                <div class="meta">
+                  <div>
+                      at <strong>TryHackMe</strong>
+                  </div>
+                  <div>
+                    <time datetime="2024-08">Aug 2024</time> –
+                    <time datetime="2024-08">Aug 2024</time>
+                  </div>
+                </div>
+              </header>
+                <p>Compiled detailed notes on TryHackMe's SOC Analyst exercises, organized for enhanced learning in Obsidian. This repository uses graphs, flowcharts, and tags to help CTI professionals and new learners visualize SOC concepts.</p>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://github.com/misterxcrypt/Recon-Eye">Recon-Eye</a></h4>
+                <div class="meta">
+                  <div>
+                  </div>
+                  <div>
+                    <time datetime="2023-06">Jun 2023</time> –
+                    <time datetime="2023-06">Jun 2023</time>
+                  </div>
+                </div>
+              </header>
+                <p>Recon-Eye scans your domain's external assets (IPs, subdomains, DNS, ports) and captures screenshots of subdomains. This project is built with Python and Flask for the backend, and HTML, CSS, and JavaScript on the frontend.</p>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://github.com/misterxcrypt/Bash-SysAdmin-Kit">Bash-Sys-Admin-Kit</a></h4>
+                <div class="meta">
+                  <div>
+                  </div>
+                  <div>
+                    <time datetime="2022-10">Oct 2022</time> –
+                    <time datetime="2022-10">Oct 2022</time>
+                  </div>
+                </div>
+              </header>
+                <p>This all-in-one CLI tool simplifies system monitoring and file analysis, consolidating essential system commands. Built with Bash scripting, it integrates commands like lscpu, free, adduser, wc, and more into a single interface.</p>
+            </article>
+        </div>
+      </section>
+      <section id="awards">
+        <h3>Awards</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <h4>Rajya Puraskar Award</h4>
+                <div class="meta">
+                    <div>
+                      Awarded by <strong>The Bharat Scouts &amp; Guides</strong>
+                    </div>
+                    <time datetime="2019-09">Sep 2019</time>
+                </div>
+              </header>
+            </article>
+        </div>
+      </section>
+      <section id="certificates">
+        <h3>Certificates</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <h4>Introduction to Cyber Security</h4>
+                <div class="meta">
+                    <div>
+                      Issued by <strong>CISCO</strong>
+                    </div>
+                    <time datetime="2021-09-15">Sep 2021</time>
+                </div>
+              </header>
+            </article>
+            <article>
+              <header>
+                <h4>Certified in Cybersecurity Self-Paced Training</h4>
+                <div class="meta">
+                    <div>
+                      Issued by <strong>(ISC)²</strong>
+                    </div>
+                    <time datetime="2022-11-01">Nov 2022</time>
+                </div>
+              </header>
+            </article>
+            <article>
+              <header>
+                <h4>Betrayal OSINT Training</h4>
+                <div class="meta">
+                    <div>
+                      Issued by <strong>Kase Scenarios</strong>
+                    </div>
+                    <time datetime="2023-10-29">Oct 2023</time>
+                </div>
+              </header>
+            </article>
+            <article>
+              <header>
+                <h4>Cyber Threat Intelligence 101</h4>
+                <div class="meta">
+                    <div>
+                      Issued by <strong>ArcX</strong>
+                    </div>
+                    <time datetime="2024-10-26">Oct 2024</time>
+                </div>
+              </header>
+            </article>
+        </div>
+      </section>
+      <section id="skills">
+        <h3>Skills</h3>
+        <div class="grid-list">
+            <div>
+                <h4>Open-Source Intelligence</h4>
+                <ul class="tag-list">
+                    <li>Social Engineering</li>
+                    <li>SOCMINT</li>
+                    <li>HUMINT</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Threat Intelligence</h4>
+                <ul class="tag-list">
+                    <li>MITRE ATT&amp;CK Framework</li>
+                    <li>MISP</li>
+                    <li>Elastic SIEM</li>
+                    <li>AlientVault OTX</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Pentesting</h4>
+                <ul class="tag-list">
+                    <li>Burpsuite</li>
+                    <li>Wireshark</li>
+                    <li>Nmap</li>
+                    <li>Nikto</li>
+                    <li>John the Ripper</li>
+                    <li>Linux</li>
+                    <li>Metasploit</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Programming</h4>
+                <ul class="tag-list">
+                    <li>C</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>Bash</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Communications</h4>
+                <ul class="tag-list">
+                    <li>Active Listening</li>
+                    <li>Empathy</li>
+                    <li>Storytelling</li>
+                    <li>Summarizing</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+      <section id="languages">
+        <h3>Languages</h3>
+        <div class="grid-list">
+            <div>
+                <h4>Tamil</h4>
+              Native Speaker
+            </div>
+            <div>
+                <h4>English</h4>
+              Full Professional
+            </div>
+        </div>
+      </section>
+      <section id="interests">
+        <h3>Interests</h3>
+        <div class="grid-list">
+            <div>
+                <h4>Reading</h4>
+                <ul class="tag-list">
+                    <li>Novels</li>
+                    <li>History</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Sports</h4>
+                <ul class="tag-list">
+                    <li>Basketball</li>
+                    <li>Running</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+      <section id="references">
+        <h3>References</h3>
+        <div class="stack">
+              <blockquote>
+                <p>Hari also played a pivotal role in refining our fraud intelligence processes, identifying key areas for improvement and innovation. I highly recommend Hari for any role in cyber threat intelligence, fraud detection, or OSINT-driven investigations.</p>
+                  <p>
+                    <cite>Allwin N</cite>
+                  </p>
+              </blockquote>
+        </div>
+      </section>
+  </body>
+</html>
