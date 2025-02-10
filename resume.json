@@ -13,7 +13,7 @@
     "url": "https://misterxcrypt.github.io",
     "summary": "Experienced systems engineer with a versatile background encompassing IT and production systems. Focused on DevOps principles, I've been dedicated to automating, scaling, and optimizing operational efficiency. A fervent advocate for nurturing robust teams through a positive work culture, I'm deeply passionate about transparency, public learning, and continuous enhancement of both developer and user experiences.",
     "location": {
-      "region": "Tamilnadu",
+      "region": "TamilNadu",
       "postalCode": "600041",
       "city": "Chennai",
       "countryCode": "IN"
@@ -48,90 +48,96 @@
     }
   ],
   "volunteer": [],
-  "education": [],
-  "awards": [],
+  "education": [
+    {
+      "institution": "Sri Eshwar College of Engineering",
+      "courses": [
+        "Computer Science and Business Systems"
+      ],
+      "area": "Coimbatore, India",
+      "startDate": "2021-10",
+      "endDate": "2025-05",
+      "score": "8.57",
+      "studyType": "Bachelor of Technologies"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Rajya Puraskar Award",
+      "awarder": "The Bharat Scouts & Guides",
+      "date": "2019-09"
+    }
+  ],
   "certificates": [
     {
-      "name": "Using Fields (eLearning)",
-      "issuer": "Splunk",
-      "date": "2024-01-19"
+      "name": "Introduction to Cyber Security",
+      "issuer": "CISCO",
+      "date": "2021-09-15"
     },
     {
-      "name": "Into to Splunk (eLearning)",
-      "issuer": "Splunk",
-      "date": "2024-01-15"
+      "name": "Certified in Cybersecurity Self-Paced Training",
+      "issuer": "(ISC)²",
+      "date": "2022-11-01"
     },
     {
-      "name": "Searching and Reporting with Splunk 6",
-      "issuer": "Splunk",
-      "date": "2014-06-30"
+      "name": "Betrayal OSINT Training",
+      "issuer": "Kase Scenarios",
+      "date": "2023-10-29"
+    },
+    {
+      "name": "Cyber Threat Intelligence 101",
+      "issuer": "ArcX",
+      "date": "2024-10-26"
     }
   ],
   "publications": [],
   "skills": [
     {
-      "name": "DevOps",
+      "name": "Open-Source Intelligence",
       "level": "Expert",
       "keywords": [
-        "Configuration Management",
-        "Continuous Integration and Continuous Delivery (CI/CD)",
-        "Systems Analysis",
-        "GitHub Actions",
-        "Open Source",
-        "Chef.io",
-        "Monitoring"
+        "Social Engineering",
+        "SOCMINT",
+        "HUMINT"
       ]
     },
     {
-      "name": "Enterprise Procedues",
+      "name": "Threat Intelligence",
       "level": "Expert",
       "keywords": [
-        "",
-        "Mergers & Acquisitions",
-        "Code Review",
-        "Two-factor Authentication",
-        "Vendor Management"
+        "MITRE ATT&CK Framework",
+        "MISP",
+        "Elastic SIEM",
+        "AlientVault OTX"
       ]
     },
     {
-      "name": "Enterprise Tools",
+      "name": "Pentesting",
       "level": "Expert",
       "keywords": [
-        "Git",
-        "Splunk",
-        "Duo",
-        "VMware",
-        "Cisco Technologies",
-        "Citrix"
-      ]
-    },
-    {
-      "name": "Microsoft",
-      "level": "Expert",
-      "keywords": [
-        "Active Directory",
-        "Microsoft Exchange",
-        "Microsoft Intune",
-        "Windows Server Update Service (WSUS)"
+        "Burpsuite",
+        "Wireshark",
+        "Nmap",
+        "Nikto",
+        "John the Ripper",
+        "Linux",
+        "Metasploit"
       ]
     },
     {
       "name": "Programming",
-      "level": "Expert",
+      "level": "Intermediate",
       "keywords": [
-        "PowerShell",
-        "Ruby",
+        "C",
         "Python",
-        "Golang",
-        "Rust",
-        "Hack"
+        "Java",
+        "Bash"
       ]
     },
     {
       "name": "Communications",
       "level": "Proficient",
       "keywords": [
-        "Public Speaking",
         "Active Listening",
         "Empathy",
         "Storytelling",
@@ -141,75 +147,58 @@
   ],
   "languages": [
     {
-      "fluency": "Full Professional",
-      "language": "English"
+      "fluency": "Native Speaker",
+      "language": "Tamil"
     },
     {
-      "fluency": "Limited Working",
-      "language": "Spanish"
+      "fluency": "Full Professional",
+      "language": "English"
     }
   ],
   "interests": [
     {
-      "name": "Fishing",
+      "name": "Reading",
       "keywords": [
-        "Bass Fishing",
-        "Outdoors"
+        "Novels",
+        "History"
       ]
     },
     {
-      "name": "Home Automation",
+      "name": "Sports",
       "keywords": [
-        "MQTT",
-        "IOT",
-        "Security"
+        "Basketball",
+        "Running"
       ]
     }
   ],
   "references": [
     {
-      "name": "Mike Dodge",
-      "reference": "Gilbert is detailed oriented and one of the hardest workers I know. If you give him a task, you can be sure it will get done!"
-    },
-    {
-      "name": "Simon Blackstein",
-      "reference": "Gilbert is an awesome systems guy. He's had to come up to speed with managing Linux and Windows infrastructure over the last few years, and has definitely exceeded my expectations by becoming a reasonable coder where he needs to. Gilbert isn't afraid of anything as far as I can tell - taken on chef recipes, Citrix support and working with me on a corporate REST API written in PowerShell. He can pretty much take on anything he sets his mind to."
-    },
-    {
-      "name": "Nicholas Whiston",
-      "reference": "In my work with Gilbert I've found him to possess a strong combination of technical savvy and interpersonal skills. He's knowledgeable but also approachable, making him a valuable team member. Gilbert is detail-oriented and committed, working hard to finish tasks under pressure and delivering exceptional results."
-    },
-    {
-      "name": "Wesley Whetstone",
-      "reference": "This dude to be frank is a bad ass at anything he touches computer wise. Would love to work with this guy soon."
+      "name": "Allwin N",
+      "reference": "Hari also played a pivotal role in refining our fraud intelligence processes, identifying key areas for improvement and innovation. I highly recommend Hari for any role in cyber threat intelligence, fraud detection, or OSINT-driven investigations."
     }
   ],
   "projects": [
     {
-      "name": "From Console to GitOps: Gilbert Sanchez Breaks It Down",
-      "url": "https://powershellpodcast.podbean.com/e/from-console-to-gitops-gilbert-sanchez-breaks-it-down/",
-      "startDate": "2023-10-09",
-      "endDate": "2023-10-09",
-      "entity": "PowerShell Podcast",
-      "description": "A return as a guest on the PowerShell Podcast."
+      "name": "SOC Notes Repository",
+      "url": "https://github.com/misterxcrypt/TryHackMe-Obsidian",
+      "startDate": "2024-08",
+      "endDate": "2024-08",
+      "entity": "TryHackMe",
+      "description": "Compiled detailed notes on TryHackMe's SOC Analyst exercises, organized for enhanced learning in Obsidian. This repository uses graphs, flowcharts, and tags to help CTI professionals and new learners visualize SOC concepts."
     },
     {
-      "name": "Template Podcast Title with Gilbert Sanchez",
-      "url": "https://powershellpodcast.podbean.com/e/template-podcast-title-with-gilbert-sanchez/",
-      "startDate": "2022-06-06",
-      "endDate": "2022-06-06",
-      "type": "Podcast",
-      "entity": "PowerShell Podcast",
-      "description": "Guest on the PowerShell Podcast to talk about PowerShell module templating."
+      "name": "Recon-Eye",
+      "url": "https://github.com/misterxcrypt/Recon-Eye",
+      "startDate": "2023-06",
+      "endDate": "2023-06",
+      "description": "Recon-Eye scans your domain's external assets (IPs, subdomains, DNS, ports) and captures screenshots of subdomains. This project is built with Python and Flask for the backend, and HTML, CSS, and JavaScript on the frontend."
     },
     {
-      "name": "Maintenance Mode: Leveraging Chef to Schedule Patching, Reboot, etc. - Chocolatey Fest 2018",
-      "type": "talk",
-      "url": "https://www.youtube.com/watch?v=azP3I5tm3ho",
-      "startDate": "2018-10-08",
-      "endDate": "2018-10-08",
-      "entity": "Chocolatey",
-      "description": "Speaker at the first conference for Chocolatey package management."
+      "name": "Bash-Sys-Admin-Kit",
+      "url": "https://github.com/misterxcrypt/Bash-SysAdmin-Kit",
+      "startDate": "2022-10",
+      "endDate": "2022-10",
+      "description": "This all-in-one CLI tool simplifies system monitoring and file analysis, consolidating essential system commands. Built with Bash scripting, it integrates commands like lscpu, free, adduser, wc, and more into a single interface."
     }
   ]
 }
